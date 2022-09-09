@@ -1,0 +1,11 @@
+# IDE and Code Editor Stuff
+/.vs
+/.vscode
+/.idea
+
+# Build Dirs
+[Bb][Ii][Nn]
+[Bb][Uu][Ii][Ll][Dd]
+[Oo][Uu][Tt]
+
+[Oo][Bb][Jj]
