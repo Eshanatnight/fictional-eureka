@@ -11,19 +11,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chat-server", "chat-server\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chat-client", "chat-client\chat-client.csproj", "{6A2DD507-4104-4CE6-9A03-0775DE2693CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chat-viewer", "chat-viewer\chat-viewer.csproj", "{797476C8-4020-42DD-A390-6CB9152D28B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chat-viewer", "chat-viewer\chat-viewer.csproj", "{797476C8-4020-42DD-A390-6CB9152D28B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Games\Game.csproj", "{5B623DE0-B941-416C-91B5-04F20710DFFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game", "Games\Game.csproj", "{5B623DE0-B941-416C-91B5-04F20710DFFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameClient", "GameClient\GameClient.csproj", "{BE81FA90-FD44-4840-B168-FDBD4E2A3C4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameClient", "GameClient\GameClient.csproj", "{BE81FA90-FD44-4840-B168-FDBD4E2A3C4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "compression", "compression\compression.csproj", "{0635378B-BE4E-42EE-88A0-ED52AF9C7EE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "compression", "compression\compression.csproj", "{0635378B-BE4E-42EE-88A0-ED52AF9C7EE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP-Sender", "FTP-Sender\FTP-Sender.csproj", "{22B8F4A7-F53D-468D-8001-E6AB5AB84CA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FTP-Sender", "FTP-Sender\FTP-Sender.csproj", "{22B8F4A7-F53D-468D-8001-E6AB5AB84CA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDP-FTP", "UDP FTP\UDP-FTP.csproj", "{00BA8E72-F353-4304-BE0F-CB3EBC9966D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UDP-FTP", "UDP FTP\UDP-FTP.csproj", "{00BA8E72-F353-4304-BE0F-CB3EBC9966D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP-Receiver", "FTP-Receiver\FTP-Receiver.csproj", "{2310F4C2-F611-49FE-AA80-CB0FA86456C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FTP-Receiver", "FTP-Receiver\FTP-Receiver.csproj", "{2310F4C2-F611-49FE-AA80-CB0FA86456C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ping", "ping\ping.csproj", "{4504F332-37A6-4F70-9124-5D221A0A3989}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{2310F4C2-F611-49FE-AA80-CB0FA86456C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2310F4C2-F611-49FE-AA80-CB0FA86456C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2310F4C2-F611-49FE-AA80-CB0FA86456C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4504F332-37A6-4F70-9124-5D221A0A3989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4504F332-37A6-4F70-9124-5D221A0A3989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4504F332-37A6-4F70-9124-5D221A0A3989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4504F332-37A6-4F70-9124-5D221A0A3989}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
