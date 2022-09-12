@@ -27,6 +27,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FTP-Receiver", "FTP-Receive
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ping", "ping\ping.csproj", "{4504F332-37A6-4F70-9124-5D221A0A3989}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "socket-server", "socket-server\socket-server.csproj", "{01C44759-DB38-4425-B4F5-081D79B7D563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "socket-client", "socket-client\socket-client.csproj", "{9A25A859-A9F5-4F3C-B9E5-3A7D61860FD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{4504F332-37A6-4F70-9124-5D221A0A3989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4504F332-37A6-4F70-9124-5D221A0A3989}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4504F332-37A6-4F70-9124-5D221A0A3989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01C44759-DB38-4425-B4F5-081D79B7D563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C44759-DB38-4425-B4F5-081D79B7D563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C44759-DB38-4425-B4F5-081D79B7D563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C44759-DB38-4425-B4F5-081D79B7D563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A25A859-A9F5-4F3C-B9E5-3A7D61860FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A25A859-A9F5-4F3C-B9E5-3A7D61860FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A25A859-A9F5-4F3C-B9E5-3A7D61860FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A25A859-A9F5-4F3C-B9E5-3A7D61860FD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

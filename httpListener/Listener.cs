@@ -4,7 +4,7 @@ using System.Text;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace HttpLisener
+namespace httpListener
 {
     class HttpLisener
     {
@@ -30,7 +30,7 @@ namespace HttpLisener
         {
             bool serve = true;
 
-            while(serve)
+            while (serve)
             {
                 HttpListenerContext ctx = await listener.GetContextAsync();
 
@@ -45,7 +45,7 @@ namespace HttpLisener
                 Console.WriteLine();
 
                 // If `shutdown` url requested w/ POST, then shutdown the server after serving the page
-                if ((req.HttpMethod == "POST") && (req.Url.AbsolutePath == "/shutdown"))
+                if (req.HttpMethod == "POST" && req.Url.AbsolutePath == "/shutdown")
                 {
                     Console.WriteLine("Shutdown requested");
                     serve = false;
@@ -57,7 +57,7 @@ namespace HttpLisener
 
                 // Write the response info
                 string disableSubmit = !serve ? "disabled" : "";
-                byte[] data = Encoding.UTF8.GetBytes(String.Format(pageData, pageViews, disableSubmit));
+                byte[] data = Encoding.UTF8.GetBytes(string.Format(pageData, pageViews, disableSubmit));
                 resp.ContentType = "text/html";
                 resp.ContentEncoding = Encoding.UTF8;
                 resp.ContentLength64 = data.LongLength;
@@ -68,7 +68,7 @@ namespace HttpLisener
             }
         }
 
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             // Create a Http server and start listening for incoming connections
             listener = new HttpListener();

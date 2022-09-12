@@ -4,7 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 
-namespace client_viewer
+namespace chat_viewer
 {
     class Viewer
     {
@@ -146,7 +146,7 @@ namespace client_viewer
             try
             {
                 Socket s = client.Client;
-                return s.Poll(10 * 1000, SelectMode.SelectRead) && (s.Available == 0);
+                return s.Poll(10 * 1000, SelectMode.SelectRead) && s.Available == 0;
             }
             catch (SocketException se)
             {

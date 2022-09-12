@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Game;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Game
-{ 
+namespace GameClient
+{
     class GameClient
     {
         // Conneciton objects
@@ -29,8 +30,8 @@ namespace Game
             // Set other data
             ServerAddress = serverAddress;
             Port = port;
-        } 
-        
+        }
+
         // Cleans up any leftover network resources
         private void _cleanupNetworkResources()
         {
@@ -209,7 +210,7 @@ namespace Game
             try
             {
                 Socket s = client.Client;
-                return s.Poll(10 * 1000, SelectMode.SelectRead) && (s.Available == 0);
+                return s.Poll(10 * 1000, SelectMode.SelectRead) && s.Available == 0;
             }
             catch (SocketException)
             {
